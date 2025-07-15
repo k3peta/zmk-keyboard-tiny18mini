@@ -2,7 +2,7 @@ file_format: "1"
 id: tiny18mini
 name: tiny18mini
 type: shield
-url: https://github.com/k3peta/zmk-config-tiny18mini
+url: https://github.com/k3peta/zmk-keyboard-tiny18mini
 requires: [seeeduino_xiao_ble]
 features:
   - keys
