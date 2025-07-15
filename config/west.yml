@@ -8,9 +8,9 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: true
+      import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
   self:
-    path: zmk-keyboard-tiny18mini
+    path: config
