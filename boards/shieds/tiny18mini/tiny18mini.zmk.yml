@@ -6,4 +6,3 @@ url: https://github.com/k3peta/zmk-config-tiny18mini
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-
