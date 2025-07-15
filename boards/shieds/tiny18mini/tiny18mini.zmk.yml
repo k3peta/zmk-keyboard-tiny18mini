@@ -1,8 +1,8 @@
 file_format: "1"
-id: tiny18
-name: tiny18
+id: tiny18mini
+name: tiny18mini
 type: shield
-url: https://github.com/k3peta/zmk-config-tiny18
+url: https://github.com/k3peta/zmk-config-tiny18mini
 requires: [seeeduino_xiao_ble]
 features:
   - keys
