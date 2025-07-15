@@ -20,8 +20,8 @@
 ---
 include:
     - board: seeeduino_xiao_ble
-      shield: tiny18mini_left
+      shield: tiny18mini_l
     - board: seeeduino_xiao_ble
-      shield: tiny18mini_right
+      shield: tiny18mini_r
     - board: seeeduino_xiao_ble
       shield: settings_reset
