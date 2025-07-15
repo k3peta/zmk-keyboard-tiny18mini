@@ -19,10 +19,10 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: tiny18_r rgbled_adapter
+    shield: tiny18mini_r rgbled_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
-    shield: tiny18_l rgbled_adapter
+    shield: tiny18mini_l rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
