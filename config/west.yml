@@ -15,5 +15,6 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+      
   self:
     path: config
