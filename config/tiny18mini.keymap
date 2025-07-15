@@ -1,0 +1,143 @@
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <1 0>;
+        };
+
+        f {
+            bindings = <&kp F>;
+            key-positions = <8 2>;
+        };
+
+        y {
+            bindings = <&kp Y>;
+            key-positions = <10 9>;
+        };
+
+        p {
+            bindings = <&kp P>;
+            key-positions = <4 5>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <8 9>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <10 11>;
+        };
+
+        lang1 {
+            bindings = <&mt LEFT_GUI LANGUAGE_2>;
+            key-positions = <7 8>;
+        };
+
+        lang2 {
+            bindings = <&mt RIGHT_GUI LANGUAGE_1>;
+            key-positions = <11 12>;
+        };
+
+        lsft {
+            bindings = <&kp LSHFT>;
+            key-positions = <6 7>;
+        };
+
+        lgui {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 15>;
+        };
+
+        lalt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 17>;
+        };
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <13 12>;
+        };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <11 17>;
+        };
+
+        layer5 {
+            bindings = <&mo 5>;
+            key-positions = <5 13>;
+        };
+
+        m {
+            bindings = <&kp M>;
+            key-positions = <17 14>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <6 13>;
+        };
+
+        g {
+            bindings = <&kp G>;
+            key-positions = <14 8>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&lt 2 W  &kp E  &kp R  &kp U  &kp I  &kp O  &kp A  &kp S  &kp D  &kp T  &kp H  &kp K  &lt 1 L  &mt RIGHT_SHIFT ENTER  &kp Z  &kp G  &kp N  &kp M
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp X  &kp C  &kp V  &kp SLASH  &kp GRAVE  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COMMA  &kp PERIOD  &kp SPACE  &kp ENTER  &trans  &kp RIGHT_SHIFT  &kp MINUS  &kp SEMICOLON  &kp RIGHT_COMMAND  &kp BACKSPACE
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &kp LEFT_SHIFT  &kp RIGHT_GUI  &kp EQUAL  &kp BACKSLASH  &kp UP_ARROW  &kp ESCAPE  &trans  &kp DEL  &kp RIGHT_ARROW  &kp BACKSPACE  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB  &kp LEFT  &kp SQT  &kp RG(ENTER)
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &kp RSHIFT  &trans  &trans  &kp N8  &kp N9  &kp N0  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &trans  &trans  &trans  &kp F7  &kp F4  &kp F5  &kp F6  &trans  &trans  &kp F11  &kp F12  &kp F8  &kp F9  &kp F10  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+};
