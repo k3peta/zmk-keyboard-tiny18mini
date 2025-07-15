@@ -18,8 +18,8 @@
 #
 ---
 
-# board: [ "seeeduino_xiao_ble" ]
-# shield: [ "tiny18mini_r", "tiny18mini_l" ]
+board: [ "seeeduino_xiao_ble" ]
+shield: [ "tiny18mini_r", "tiny18mini_l" ]
 include:
   - board: seeeduino_xiao_ble
     shield: tiny18mini_r rgbled_adapter
