@@ -42,7 +42,7 @@ jobs:
         run: west update
 
       - name: West Build
-        run: west build -p -b ${{ matrix.board }} -d build/${{ matrix.shield }} -- -DSHIELD=${{ matrix.shield }}
+        run: west build -p -s zmk/app -b ${{ matrix.board }} -d build/${{ matrix.shield }} -- -DSHIELD=${{ matrix.shield }}
       
       - name: Archive firmware
         uses: actions/upload-artifact@v4
