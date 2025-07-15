@@ -1,0 +1,18 @@
+# Copyright (c) 2025 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_TINY18MINI_RIGHT
+	config ZMK_KEYBOARD_NAME
+		default "tiny18mini"
+	config ZMK_BLE
+		default y
+	config ZMK_SPLIT_ROLE_CENTRAL
+		default y
+endif
+
+if SHIELD_TINY18MINI_LEFT || SHIELD_TINY18MINI_RIGHT
+	config ZMK_SPLIT
+		default y
+config INPUT
+		default y
+endif
