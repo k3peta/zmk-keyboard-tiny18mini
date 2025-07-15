@@ -17,6 +17,9 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
+
+# board: [ "seeeduino_xiao_ble" ]
+# shield: [ "tiny18mini_r", "tiny18mini_l" ]
 include:
   - board: seeeduino_xiao_ble
     shield: tiny18mini_r rgbled_adapter
